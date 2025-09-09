@@ -1,3 +1,12 @@
+struct Node {
+    int data;
+    Node *next;
+
+    Node(int x) {
+        data = x;
+        next = nullptr;
+    }
+};
 
 Node* mergeKLists(vector<Node*>& arr) {
     if(arr.size() == 0){
@@ -46,3 +55,4 @@ Node* mergeTwoLists(Node* l1, Node* l2) {
     
     return dummy.next;
 }
+
