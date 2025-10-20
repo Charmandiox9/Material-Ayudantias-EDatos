@@ -1,4 +1,4 @@
-# 🔗 Ayudantía 5: Listas Enlazadas (Tipo prueba)
+# 🔗 Ayudantía 6:
 
 ## 📝 Opción 1: Repaso Listas Enlazadas
 ### 🎯 Descripción
