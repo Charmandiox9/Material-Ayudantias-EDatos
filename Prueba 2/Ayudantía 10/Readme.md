@@ -7,9 +7,9 @@ Dado el siguiente árbol binario, responda:
 
 1. ¿Cuál es la altura del árbol?
 2. ¿Cuántos nodos hoja tiene?
-3. Indique el recorrido **preorder** (raíz-izquierda-derecha)
-4. Indique el recorrido **inorder** (izquierda-raíz-derecha)
-5. Indique el recorrido **postorder** (izquierda-derecha-raíz)
+3. Indique el recorrido **preorder**
+4. Indique el recorrido **inorder**
+5. Indique el recorrido **postorder**
 6. ¿Es un árbol binario de búsqueda (BST)? Justifique.
 
 ### 💡 Ejemplo
