@@ -5,12 +5,12 @@
 ### 🎯 Descripción
 Dado el siguiente árbol binario, responda:
 
-a) ¿Cuál es la altura del árbol?
-b) ¿Cuántos nodos hoja tiene?
-c) Indique el recorrido **preorder** (raíz-izquierda-derecha)
-d) Indique el recorrido **inorder** (izquierda-raíz-derecha)
-e) Indique el recorrido **postorder** (izquierda-derecha-raíz)
-f) ¿Es un árbol binario de búsqueda (BST)? Justifique.
+1. ¿Cuál es la altura del árbol?
+2. ¿Cuántos nodos hoja tiene?
+3. Indique el recorrido **preorder** (raíz-izquierda-derecha)
+4. Indique el recorrido **inorder** (izquierda-raíz-derecha)
+5. Indique el recorrido **postorder** (izquierda-derecha-raíz)
+6. ¿Es un árbol binario de búsqueda (BST)? Justifique.
 
 ### 💡 Ejemplo
 ```
@@ -30,10 +30,10 @@ f) ¿Es un árbol binario de búsqueda (BST)? Justifique.
 ### 🎯 Descripción
 Suponga una empresa de entregas que debe encontrar la ruta más corta desde el punto A al punto F. 
 
-a) Liste todos los caminos posibles desde A hasta F
-b) Calcule la distancia total en KM de cada camino
-c) Determine cuál es el camino más corto
-d) ¿Qué algoritmo usaría para encontrar el camino mas corto?
+1. Liste todos los caminos posibles desde A hasta F
+2. Calcule la distancia total en KM de cada camino
+3. Determine cuál es el camino más corto
+4. ¿Qué algoritmo usaría para encontrar el camino mas corto?
 
 ### 💡 Ejemplo
 ```
