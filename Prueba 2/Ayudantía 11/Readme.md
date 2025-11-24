@@ -6,29 +6,13 @@
 Dado el siguiente grafo dirigido, responda:
 
 1. ¿Cuántos vértices y aristas tiene el grafo?
-2. ¿Cuál es el grado de entrada y salida de cada vértice?
-3. ¿Existe algún ciclo en el grafo? Si es así, indique uno.
-4. Realice un recorrido **BFS** (Breadth-First Search) desde el vértice 0
-5. Realice un recorrido **DFS** (Depth-First Search) desde el vértice 0
+2. ¿Existe algún ciclo en el grafo? Si es así, indique uno.
+3. Realice un recorrido **BFS** (Breadth-First Search) desde el vértice 0
+4. Realice un recorrido **DFS** (Depth-First Search) desde el vértice 0
 
-### 💡 Ejemplo
-```
-Grafo dirigido:
+**Visualización del Grafo:**
+![Grafo](./graph1.png)
 
-    0 -----> 1 -----> 2
-    |        |        |
-    v        v        v
-    3 -----> 4 <----- 5
-    
-Aristas:
-0 -> 1
-0 -> 3
-1 -> 2
-1 -> 4
-2 -> 5
-3 -> 4
-5 -> 4
-```
 
 ---
 
@@ -70,7 +54,7 @@ Se te proporciona información de 6 usuarios y sus conexiones. Debes:
 
 **Visualización del Grafo:**
 
-![Grafo](https://imgur.com/a/Pe19tjk)
+![Grafo](./graph2.png)
 
 **Información adicional:**
 - Grafo **no dirigido** (amistad es bidireccional)
