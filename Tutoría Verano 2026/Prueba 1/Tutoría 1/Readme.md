@@ -1,4 +1,4 @@
-# Tutoría: Listas Enlazadas
+# Tutoría 1: Listas Enlazadas
 
 **Tema:** Manipulación de Punteros, Inversión y Fusión  
 **Duración:** 90 Minutos  
