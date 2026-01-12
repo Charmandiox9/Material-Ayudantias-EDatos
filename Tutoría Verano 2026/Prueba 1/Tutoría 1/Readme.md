@@ -2,7 +2,6 @@
 
 **Tema:** Manipulación de Punteros, Inversión y Fusión  
 **Duración:** 90 Minutos  
-**Objetivo:** Perder el miedo a los punteros y manipular listas sin romper la memoria.
 
 ---
 
