@@ -6,7 +6,7 @@
 
 ---
 
-## Ejercicio 1: El Detective (Debugging)
+## Ejercicio 1: El Detective
 En el archivo `ejercicio1.cpp` encontrarás la función `eliminarUltimo()`.
 Actualmente, esta función provoca un **Segmentation Fault** o deja basura en memoria bajo ciertas condiciones.
 
@@ -17,7 +17,7 @@ Actualmente, esta función provoca un **Segmentation Fault** o deja basura en me
 
 ---
 
-## Ejercicio 2: Inversión "In-Place"
+## Ejercicio 2: Inversión
 **Misión:** Implementar la función `invertirLista(Nodo*& cabeza)`.
 **Restricción:** PROHIBIDO crear nodos nuevos (`new`). Debes reutilizar los nodos existentes cambiando la dirección de sus flechas.
 
