@@ -18,7 +18,7 @@ Actualmente, esta función provoca un **Segmentation Fault** o deja basura en me
 ---
 
 ## Ejercicio 2: Inversión
-**Misión:** Implementar la función `invertirLista(Nodo*& cabeza)`.
+**Misión:** Implementar la función `invertirLista(Nodo* cabeza)`.
 **Restricción:** PROHIBIDO crear nodos nuevos (`new`). Debes reutilizar los nodos existentes cambiando la dirección de sus flechas.
 
 **Algoritmo sugerido:**
