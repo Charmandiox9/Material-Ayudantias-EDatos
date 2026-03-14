@@ -1,5 +1,6 @@
 # Ayudantías Estructura de Datos
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+
 Hola, este es un repositorio donde se almacenan tanto pruebas, ayudantías y talleres. Adicionalmente se incorporara una guía de estudio para que puedan resolver sus dudas y complementar con lo visto en clases. Hecho por un estudiante para estudiantes 👍.
 
 ---
