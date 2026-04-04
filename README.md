@@ -74,5 +74,5 @@ Explicaciones teóricas y prácticas de cada tema del curso.
 
 ## Autor
 
-Daniel Durán García — Estudiante Ingeniería en Informática  
+Daniel Durán García — Estudiante Ingeniería en Tecnologías de Información 
 [![GitHub](https://img.shields.io/badge/GitHub-Charmandiox9-181717?style=flat&logo=github)](https://github.com/Charmandiox9)
