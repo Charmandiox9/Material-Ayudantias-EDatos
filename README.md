@@ -32,12 +32,11 @@ Explicaciones teóricas y prácticas de cada tema del curso.
 
 ## 📚 Material por Período
 
-| Período                                         | Descripción                              |
-| ----------------------------------------------- | ---------------------------------------- |
-| [2025-02](2025-02/)                             | Ayudantías del segundo semestre del 2025 |
-| [2026-01](2026-01/)                             | Ayudantías del primer semestre del 2026  |
+| Período                                         | Descripción                                    |
+| ----------------------------------------------- | ---------------------------------------------- |
+| [2025-02](2025-02/)                             | Ayudantías del segundo semestre del 2025       |
+| [Tutoría Verano 2026](Tutoría%20Verano%202026/) | Tutorías del curso de verano del 2026          |
 | [Invierno 2026](Invierno%202026/)               | Ayudantías Invierno 2026 — Prueba 1 y Prueba 2 |
-| [Tutoría Verano 2026](Tutoría%20Verano%202026/) | Tutorías del curso de verano del 2026    |
 
 ---
 
