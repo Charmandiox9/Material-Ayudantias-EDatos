@@ -2,7 +2,7 @@
 
 Material de ayudantías correspondiente al curso de invierno 2026.
 
-## 📋 Contenido
+## Contenido
 
 ### Prueba 1
 
