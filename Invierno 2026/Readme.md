@@ -13,7 +13,6 @@ Material de ayudantías correspondiente al curso de invierno 2026.
 | Ayudantía 3 - Listas Enlazadas Simples y Circulares | [Readme](Prueba%201/Ayudantía%203/Readme.md) | [ej1](Prueba%201/Ayudantía%203/Solve/ej1.cpp) · [ej2](Prueba%201/Ayudantía%203/Solve/ej2.cpp) |
 | Ayudantía 4 - Listas Enlazadas Dobles y Circulares | [Readme](Prueba%201/Ayudantía%204/Readme.md) | [ej1](Prueba%201/Ayudantía%204/Solve/ej1.cpp) · [ej2](Prueba%201/Ayudantía%204/Solve/ej2.cpp) |
 | Ayudantía 5 - Stacks y Queues | [Readme](Prueba%201/Ayudantía%205/Readme.md) | [ej1](Prueba%201/Ayudantía%205/Solve/ej1.cpp) · [ej2](Prueba%201/Ayudantía%205/Solve/ej2.cpp) |
-| Ayudantía 6 - Big O y Ejercicio tipo prueba | [Readme](Prueba%201/Ayudantía%206/Readme.md) | [ej1](Prueba%201/Ayudantía%206/Solve/ej1.cpp) · [ej2](Prueba%201/Ayudantía%206/Solve/ej2.cpp) |
 
 ### Prueba 2
 
@@ -23,7 +22,6 @@ Material de ayudantías correspondiente al curso de invierno 2026.
 | Ayudantía 7 - AVL y Heapsort | [Readme](Prueba%202/Ayudantía%207/Readme.md) | [ej1](Prueba%202/Ayudantía%207/Solve/ej1.md) · [ej2](Prueba%202/Ayudantía%207/Solve/ej2.md) |
 | Ayudantía 8 - Código de Árboles | [Readme](Prueba%202/Ayudantía%208/Readme.md) | [ej1](Prueba%202/Ayudantía%208/Solve/ej1.md) · [ej2](Prueba%202/Ayudantía%208/Solve/ej2.md) |
 | Ayudantía 9 - Grafos | [Readme](Prueba%202/Ayudantía%209/Readme.md) | [ej1](Prueba%202/Ayudantía%209/Solve/ej1.cpp) · [ej2](Prueba%202/Ayudantía%209/Solve/ej2.cpp) |
-| Ayudantía 10 - Ejercicio tipo prueba | [Readme](Prueba%202/Ayudantía%2010/Readme.md) | [ej3](Prueba%202/Ayudantía%2010/Solve/ej3.cpp) · [Solution](Prueba%202/Ayudantía%2010/Solution.md) |
 
 ---
 
