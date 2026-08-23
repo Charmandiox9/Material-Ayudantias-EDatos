@@ -1,103 +1,116 @@
-# Ayudantía 1: Punteros, POO y Herencia
+# Ayudantía 1: Punteros, Aritmética de Punteros, POO Base y STL
 
-## Ejercicio 1: Punteros y Memoria Dinámica — Lista de Empleados
+## Ejercicio 1: Aritmética de Punteros — Arreglo Dinámico (POO)
 
 ### Descripción
 
-Implementa una estructura `Empleado` con los siguientes campos:
+Implementa una clase `ArregloEnteros` que gestione un arreglo dinámico de enteros. Toda la manipulación interna del arreglo debe hacerse con **aritmética de punteros** (`*(ptr + i)`), nunca con el operador `[]`.
 
-- `nombre` — un `char*` con el nombre del empleado
-- `rut` — un `char*` con el RUT (formato: "12345678-9")
-- `sueldo` — un `double` con el sueldo mensual
+La clase debe tener:
 
-Debes implementar las siguientes funciones que trabajan con **punteros**:
-
-1. `crearEmpleado(const char* nombre, const char* rut, double sueldo)` — crea un empleado dinámicamente (con copias de los strings mediante `new[]`)
-2. `crearListaEmpleados(int n)` — crea un arreglo dinámico de `n` punteros a `Empleado`, inicializados en `nullptr`
-3. `mostrarEmpleado(Empleado* e)` — imprime los datos del empleado
-4. `eliminarEmpleado(Empleado* e)` — libera la memoria del empleado (incluyendo los strings)
-5. `eliminarLista(Empleado** lista, int n)` — elimina la memoria de los empleados no nulos y del arreglo de punteros
+- Atributos privados: `int* data` (puntero al arreglo) y `int tamano`
+- Constructor `ArregloEnteros(int n)` — reserva memoria con `new int[n]` y valida que `n > 0`
+- Método `int get(int i) const` — devuelve el elemento en la posición `i`, lanzando `std::out_of_range` si el índice es inválido
+- Método `void set(int i, int valor)` — asigna `valor` en la posición `i`, con la misma validación
+- Método `int sumar() const` — suma de todos los elementos
+- Método `double promedio() const` — promedio de los elementos
+- Método `int maximo() const` e `int minimo() const` — valor mayor y menor
+- Método `void duplicar()` — aumenta el tamaño del arreglo al doble, conservando los valores (reservar un arreglo nuevo, copiar con aritmética de punteros y liberar el antiguo)
+- Método `void imprimir() const` — imprime el contenido en el formato `[v1 v2 ... vn]`
+- Destructor que libera la memoria
 
 **Restricciones:**
 
-- Solo librerías `<iostream>` y `<cstring>`
-- No usar `std::string`, `std::vector` ni `std::unique_ptr`
-- Validar punteros `nullptr` antes de usarlos
-- No debe quedar ninguna memoria sin liberar
+- Solo librerías `<iostream>` y `<stdexcept>`
+- No usar `std::vector` ni ningún contenedor de STL en la implementación
+- No usar el operador `[]` para acceder a `data` en ninguna parte de la clase
+- Validar tamaños e índices con excepciones
 
 ### Ejemplo
 
 ```
 main:
-  Empleado** lista = crearListaEmpleados(3);
-  lista[0] = crearEmpleado("Ana", "12345678-9", 650000.0);
-  lista[1] = crearEmpleado("Pedro", "98765432-1", 820000.5);
-  lista[2] = nullptr;
+  ArregloEnteros a(5);
+  a.set(0, 10); a.set(1, 20); a.set(2, 30); a.set(3, 40); a.set(4, 50);
 
-  for (int i = 0; i < 3; i++) {
-      if (lista[i] != nullptr) mostrarEmpleado(lista[i]);
-  }
+  a.imprimir();        // [10 20 30 40 50]
+  std::cout << "Suma: " << a.sumar() << std::endl;        // 150
+  std::cout << "Prom: " << a.promedio() << std::endl;     // 30
+  std::cout << "Max: " << a.maximo() << std::endl;        // 50
+  std::cout << "Min: " << a.minimo() << std::endl;        // 10
 
-  eliminarLista(lista, 3);
+  a.duplicar();  // tamano pasa de 5 a 10
+  a.set(7, 99);
+  a.imprimir();
 
 Output:
-  Nombre: Ana, RUT: 12345678-9, Sueldo: 650000.00
-  Nombre: Pedro, RUT: 98765432-1, Sueldo: 820000.50
+  [10 20 30 40 50]
+  Suma: 150
+  Prom: 30
+  Max: 50
+  Min: 10
+  [10 20 30 40 50 0 0 99 0 0]
 ```
 
 ---
 
-## Ejercicio 2: Herencia — Cálculo de Sueldos
+## Ejercicio 2: STL — Procesamiento de Calificaciones
 
 ### Descripción
 
-Implementa una jerarquía de clases para el cálculo de sueldos de una empresa usando **herencia y polimorfismo**:
+Usando **STL** (`std::vector` y `std::string`) resuelve el siguiente problema de procesamiento de notas de una asignatura.
 
-- Clase base abstracta `Empleado`:
-  - Atributos protegidos: `char* nombre`, `int rut`
-  - Constructor que recibe nombre y rut (copiando el nombre con `new[]`)
-  - Método virtual puro: `double calcularSueldo() const = 0`
-  - Método virtual: `virtual void mostrar() const` — imprime nombre, rut y sueldo
-  - Destructor virtual
+Define la estructura:
 
-- Clase `EmpleadoJornalero` (hereda de Empleado):
-  - Atributos: `double valorDia`, `int diasTrabajados`
-  - Sueldo = `valorDia * diasTrabajados`
+```cpp
+struct Estudiante {
+    std::string nombre;
+    int nota;  // 0 a 100
+};
+```
 
-- Clase `EmpleadoComision` (hereda de Empleado):
-  - Atributos: `double sueldoBase`, `double porcentajeComision` (ej: 0.10 = 10%), `double ventas`
-  - Sueldo = `sueldoBase + (ventas * porcentajeComision)`
+Implementa las siguientes funciones:
 
-- Clase `EmpleadoGerente` (hereda de Empleado):
-  - Atributo: `double sueldoMensual`
-  - Sueldo = `sueldoMensual + 100000.0` (bono fijo)
+1. `std::string estudianteMaximaNota(const std::vector<Estudiante>& lista)`
+   — devuelve el nombre del estudiante con la nota más alta (si hay empate, el primero que aparezca).
+
+2. `double promedioGeneral(const std::vector<Estudiante>& lista)`
+   — devuelve el promedio de las notas del grupo. Usa un acumulador con un bucle `for` y al final divide entre la cantidad de estudiantes. Devuelve `0.0` si la lista está vacía.
+
+3. `std::vector<std::string> aprobados(const std::vector<Estudiante>& lista, int notaMinima)`
+   — devuelve los nombres de los estudiantes con nota >= `notaMinima`, **ordenados por nota descendente**. El ordenamiento debe implementarse a mano con **bubble sort**, sin usar `std::sort` ni `<algorithm>`.
+
+4. `bool existe(const std::vector<Estudiante>& lista, const std::string& nombre)`
+   — indica si existe un estudiante con ese nombre (búsqueda lineal).
 
 **Restricciones:**
 
-- Solo librerías `<iostream>` y `<iomanip>`
-- Procesar los empleados a través de punteros base `Empleado*` (polimorfismo)
-- No usar `std::vector` ni contenedores
-- Cada clase hija debe reimplementar `mostrar()` mostrando además sus datos propios
+- Solo librerías `<iostream>`, `<vector>` y `<string>`
+- No usar la librería `<algorithm>` (`std::sort`, `std::max_element`, `std::any_of`, etc.)
+- No modificar los vectores recibidos por referencia const
 
 ### Ejemplo
 
 ```
 main:
-  Empleado** empleados = new Empleado*[3];
-  empleados[0] = new EmpleadoJornalero("Juan", 11111111, 30000.0, 25);
-  empleados[1] = new EmpleadoComision("Maria", 22222222, 400000.0, 0.10, 2500000.0);
-  empleados[2] = new EmpleadoGerente("Luis", 33333333, 1500000.0);
+  std::vector<Estudiante> lista = {
+      {"Ana", 85}, {"Pedro", 45}, {"Maria", 92},
+      {"Luis", 70}, {"Carmen", 45}
+  };
 
-  for (int i = 0; i < 3; i++) {
-      empleados[i]->mostrar();
-      delete empleados[i];
-  }
-  delete[] empleados;
+  std::cout << std::boolalpha;
+  std::cout << estudianteMaximaNota(lista) << std::endl;    // Maria
+  std::cout << promedioGeneral(lista) << std::endl;         // 67.4
+  std::vector<std::string> apro = aprobados(lista, 60);
+  // apro = {"Maria", "Ana", "Luis"}
+  std::cout << existe(lista, "Carmen") << std::endl;        // true
+  std::cout << existe(lista, "Jorge") << std::endl;         // false
 
 Output:
-  [Jornalero] Juan (11111111): valorDia=30000.00, dias=25 | Sueldo: 750000.00
-  [Comision] Maria (22222222): base=400000.00, comision=10.00%, ventas=2500000.00 | Sueldo: 650000.00
-  [Gerente] Luis (33333333): mensual=1500000.00 | Sueldo: 1600000.00
+  Maria
+  67.4
+  true
+  false
 ```
 
 ---
