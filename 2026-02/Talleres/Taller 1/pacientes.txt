@@ -1,0 +1,12 @@
+001;Juan Perez;25;Cardiologia
+002;Maria Soto;67;Urgencias
+003;Pedro Rojas;43;Cirugia
+004;Ana Torres;12;Pediatria
+005;Luis Diaz;31;Traumatologia
+006;Sofia Morales;54;Neurologia
+007;Carlos Fuentes;72;Medicina General
+008;Camila Rojas;8;Pediatria
+009;Diego Vargas;36;Hospitalizacion
+010;Valentina Perez;29;Cardiologia
+011;Jorge Castillo;61;Urgencias
+012;Daniela Soto;47;Traumatologia
