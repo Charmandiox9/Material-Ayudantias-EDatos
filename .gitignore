@@ -1,12 +1,30 @@
 2026-02/**
 
+# Excepción: carpeta raíz
 !2026-02/
+
+# README principal
 !2026-02/README.md
 
+!2026-02/Talleres/
+2026-02/Talleres/**
+
+!2026-02/Talleres/Taller 1/
+
+!2026-02/Talleres/Taller 1/**
+
+# Prueba 1
 !2026-02/Prueba 1/
 2026-02/Prueba 1/**
+
+# Ayudantía 1
 !2026-02/Prueba 1/Ayudantía 1/
 !2026-02/Prueba 1/Ayudantía 1/Readme.md
 
+# Soluciones C++
+!2026-02/Prueba 1/Ayudantía 1/Solve/
+!2026-02/Prueba 1/Ayudantía 1/Solve/*.cpp
+
+# Prueba 2
 !2026-02/Prueba 2/
 2026-02/Prueba 2/**
