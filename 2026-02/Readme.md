@@ -9,7 +9,7 @@ Material de ayudantías correspondiente al curso de iregular del semestre 2026-0
 | Sesión                                      | Enunciado                                    | Solución                                                                                      |
 | ------------------------------------------- | -------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | Ayudantía 1 - Punteros, Aritmética y STL    | [Readme](Prueba%201/Ayudantía%201/Readme.md) | [ej1](Prueba%201/Ayudantía%201/Solve/ej1.cpp) · [ej2](Prueba%201/Ayudantía%201/Solve/ej2.cpp) |
-| Ayudantía 2 - Linked List Simple y Circular | [Readme](Prueba%201/Ayudantía%202/Readme.md) | [ej1](Prueba%201/Ayudantía%202/Solve/ej1.cpp) · [ej2](Prueba%201/Ayudantía%202/Solve/ej2.cpp) |
+| Ayudantía 2 - POO Avanzada y Herencia       | [Readme](Prueba%201/Ayudantía%202/Readme.md) | [ej1](Prueba%201/Ayudantía%202/Solve/ej1.cpp) |
 | Ayudantía 3 - Linked List Doble y Circular  | [Readme](Prueba%201/Ayudantía%203/Readme.md) | [ej1](Prueba%201/Ayudantía%203/Solve/ej1.cpp) · [ej2](Prueba%201/Ayudantía%203/Solve/ej2.cpp) |
 | Ayudantía 4 - Stacks & Queues               | [Readme](Prueba%201/Ayudantía%204/Readme.md) | [ej1](Prueba%201/Ayudantía%204/Solve/ej1.cpp) · [ej2](Prueba%201/Ayudantía%204/Solve/ej2.cpp) |
 | Ayudantía 5 - Complex                       | [Readme](Prueba%201/Ayudantía%205/Readme.md) | [ej1](Prueba%201/Ayudantía%205/Solve/ej1.cpp) · [ej2](Prueba%201/Ayudantía%205/Solve/ej2.cpp) |
