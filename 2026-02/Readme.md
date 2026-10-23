@@ -18,7 +18,7 @@ Material de ayudantías correspondiente al curso de iregular del semestre 2026-0
 
 | Sesión                                       | Enunciado                                    | Solución                                                                                      |
 | -------------------------------------------- | -------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| Ayudantía 6 - Recorridos en Árboles Binarios | [Readme](Prueba%202/Ayudantía%206/Readme.md) | [ej1](Prueba%202/Ayudantía%206/Solve/ej1.cpp) · [ej2](Prueba%202/Ayudantía%206/Solve/ej2.cpp) |
+| Ayudantía 6 - Recorridos en Árboles Binarios | [Readme](Prueba%202/Ayudantía%206/Readme.md) | [ej1](Prueba%202/Ayudantía%206/Solve/ej1.md) · [ej2](Prueba%202/Ayudantía%206/Solve/ej2.cpp) · [ej3](Prueba%202/Ayudantía%206/Solve/ej3.cpp) |
 | Ayudantía 7 - AVL                            | [Readme](Prueba%202/Ayudantía%207/Readme.md) | [ej1](Prueba%202/Ayudantía%207/Solve/ej1.md)                                                  |
 | Ayudantía 8 - Heapsort                       | [Readme](Prueba%202/Ayudantía%208/Readme.md) | [ej1](Prueba%202/Ayudantía%208/Solve/ej1.md)                                                  |
 | Ayudantía 9 - Grafos                         | [Readme](Prueba%202/Ayudantía%209/Readme.md) | [ej1](Prueba%202/Ayudantía%209/Solve/ej1.cpp) · [ej2](Prueba%202/Ayudantía%209/Solve/ej2.cpp) |

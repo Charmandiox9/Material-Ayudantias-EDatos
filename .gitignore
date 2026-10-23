@@ -41,8 +41,13 @@
 !2026-02/Prueba 1/Ayudantía 5/
 !2026-02/Prueba 1/Ayudantía 5/Readme.md
 
-!2026-02/Prueba 1/Ayudantía 6/
-!2026-02/Prueba 1/Ayudantía 6/Readme.md
+# Prueba 2
+!2026-02/Prueba 2/
+2026-02/Prueba 2/**
+
+# Ayudantía 6
+!2026-02/Prueba 2/Ayudantía 6/
+!2026-02/Prueba 2/Ayudantía 6/Readme.md
 
 # Soluciones C++
 !2026-02/Prueba 1/Ayudantía 1/Solve/
@@ -55,7 +60,3 @@
 !2026-02/Prueba 1/Ayudantía 4/Solve/*.cpp
 !2026-02/Prueba 1/Ayudantía 5/Solve/
 !2026-02/Prueba 1/Ayudantía 5/Solve/*.cpp
-
-# Prueba 2
-!2026-02/Prueba 2/
-2026-02/Prueba 2/**
